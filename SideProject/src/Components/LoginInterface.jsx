@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function UserInfo() {
+function LoginInterface() {
   return (
     <>
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
@@ -44,4 +44,4 @@ function UserInfo() {
   );
 }
 
-export default UserInfo;
+export default LoginInterface;
