@@ -11,7 +11,7 @@ function RegisterInterface() {
         <label>Password:</label>
         <input type="text" placeholder="Enter a Password" />
       </form>
-      <Link to="Home">
+      <Link to="/PersonalHome">
         <button>Create account</button>
       </Link>
     </div>

@@ -23,7 +23,7 @@ function UserInfo() {
           />
         </form>
         <nav>
-          <Link to="Home">
+          <Link to="/PersonalHome">
             <button className="bg-blue-500 text-white p-2 rounded shadow hover:bg-blue-700">
               Login
             </button>
@@ -33,7 +33,7 @@ function UserInfo() {
       <div className="mt-4 text-center">
         <p>No Account?</p>
         <nav>
-          <Link to="Register">
+          <Link to="/Register">
             <button className="mt-2 bg-green-500 text-white p-2 rounded shadow hover:bg-green-700">
               Create Account
             </button>
