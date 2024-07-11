@@ -4,6 +4,7 @@ import RegisterPage from "./Pages/RegisterPage";
 import PersonalHomePage from "./Pages/PersonalHomePage";
 import { Routes, Route } from "react-router-dom";
 import ChatPage from "./Pages/ChatPage";
+import "./firebaseConfig";
 
 function App() {
   return (

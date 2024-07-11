@@ -59,8 +59,8 @@ function RegisterInterface() {
           onChange={handlePasswordChange}
         />
       </form>
-      <Link to="Home">
-        <button>Create account</button>
+      <Link to="/PersonalHome">
+        <button onClick={saveData}>Create account</button>
       </Link>
     </div>
   );
