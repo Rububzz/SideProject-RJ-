@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-import app from "../firebaseConfig";
-import { getDatabase, ref, set, push } from "firebase/database";
 import { useState } from "react";
 
 function RegisterInterface() {
@@ -20,19 +17,7 @@ function RegisterInterface() {
     setPassword(event.target.value);
   }
 
-  const saveData = async () => {
-    const db = getDatabase(app);
-    const newDocRef = push(ref(db, "UserData"));
-    set(newDocRef, {
-      Email: email,
-      Username: username,
-      Password: password,
-    })
-      .then(() => {
-        alert("Account created Successfully");
-      })
-      .catch((error) => alert("error: ", error.message));
-  };
+  const showData = (e) => console.log(e);
 
   return (
     <div>
@@ -60,7 +45,7 @@ function RegisterInterface() {
         />
       </form>
       <Link to="/PersonalHome">
-        <button onClick={saveData}>Create account</button>
+        <button onClick={(e) => showData(e)}>Create account</button>
       </Link>
     </div>
   );

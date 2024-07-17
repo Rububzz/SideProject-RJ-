@@ -1,10 +1,9 @@
 import LoginPage from "./Pages/LoginPage";
-import GeneralHomePage from "./Pages/GeneralHomePage";
 import RegisterPage from "./Pages/RegisterPage";
-import PersonalHomePage from "./Pages/PersonalHomePage";
+import GeneralHomePage from "./Pages/GeneralHomePage";
 import { Routes, Route } from "react-router-dom";
+import PersonalHomePage from "./Pages/PersonalHomePage";
 import ChatPage from "./Pages/ChatPage";
-import "./firebaseConfig";
 
 function App() {
   return (
@@ -12,9 +11,9 @@ function App() {
       <Routes>
         <Route path="/" element={<GeneralHomePage />}></Route>
         <Route path="Register" element={<RegisterPage />}></Route>
-        <Route path="Login" element={<LoginPage />}></Route>
         <Route path="PersonalHome" element={<PersonalHomePage />}></Route>
-        <Route path="Chat" element={<ChatPage />}></Route>
+        <Route path="Chat" element={<ChatPage></ChatPage>}></Route>
+        <Route path="Login" element={<LoginPage></LoginPage>}></Route>
       </Routes>
     </div>
   );

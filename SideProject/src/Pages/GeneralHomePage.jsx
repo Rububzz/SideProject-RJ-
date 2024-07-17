@@ -1,5 +1,5 @@
-import Navigationbar from "../Components/Navigationbar";
 import { Link } from "react-router-dom";
+import NavigationBar from "../Components/Navigationbar";
 
 function GeneralHomePage() {
   return (
@@ -8,7 +8,7 @@ function GeneralHomePage() {
       <Link to="Login">
         <button>Login</button>
       </Link>
-      <Navigationbar />
+      <NavigationBar></NavigationBar>
     </div>
   );
 }
